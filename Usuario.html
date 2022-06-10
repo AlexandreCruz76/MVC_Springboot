@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http: //www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Usuarios</title>
+</head>
+<body>
+    <h1> Lista de Usuarios</h1>
+    <hr>
+<table>
+    <thead>
+    <tbody>
+    <tr>
+        <th>Cpf</th>
+        <th>Nome</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="usuario:${usuarios}">
+        <td th:text="${usuario.cpf}">cpf</td>
+        <td th:text="${usuario.nome}">nome </td>
+    </tr>
+   </tbody>
+</table>
+
+
+
+</body>
+</html>
